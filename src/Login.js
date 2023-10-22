@@ -1,79 +1,35 @@
 import React, { useState } from "react";
-
-import Form from "react-bootstrap/Form";
-
-import Button from "react-bootstrap/Button";
-
 import "./Login.css";
 
-export default function Login() {
+function LoginPage() {
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
 
-  const [email, setEmail] = useState("");
+    const handleLogin = () => {
+        // Handle the login logic here
+        if (username && password) {
+            // Submit the data to the backend for authentication
+        } else {
+            alert('Both fields are required!');
+        }
+    
+    };
 
-  const [password, setPassword] = useState("");
-
-  function validateForm() {
-
-    return email.length > 0 && password.length > 0;
-
-  }
-
-  function handleSubmit(event) {
-
-    event.preventDefault();
-
-  }
-
-  return (
-
-    <div className="Login">
-
-      <Form onSubmit={handleSubmit}>
-
-        <Form.Group size="lg" controlId="email">
-
-          <Form.Label>Email</Form.Label>
-
-          <Form.Control
-
-            autoFocus
-
-            type="email"
-
-            value={email}
-
-            onChange={(e) => setEmail(e.target.value)}
-
-          />
-
-        </Form.Group>
-
-        <Form.Group size="lg" controlId="password">
-
-          <Form.Label>Password</Form.Label>
-
-          <Form.Control
-
-            type="password"
-
-            value={password}
-
-            onChange={(e) => setPassword(e.target.value)}
-
-          />
-
-        </Form.Group>
-
-        <Button block size="lg" type="submit" disabled={!validateForm()}>
-
-          Login
-
-        </Button>
-
-      </Form>
-
-    </div>
-
-  );
-
+    return (
+        <div>
+            <input 
+                type="text" 
+                value={username} 
+                onChange={e => setUsername(e.target.value)} 
+            />
+            <input 
+                type="password" 
+                value={password} 
+                onChange={e => setPassword(e.target.value)} 
+            />
+            <button onClick={handleLogin}>Login</button>
+        </div>
+    );
 }
+
+export default LoginPage;
