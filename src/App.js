@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import Home from "./Home";
+import Home from "./pages/Home";
+import Upload from "./Upload";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -18,7 +20,8 @@ function App() {
         >
           Learn React
         </a>
-        <Home></Home>
+        <Link to={`Home`}>Home</Link>
+        <Link to={`Upload`}>Upload</Link>
       </header>
     </div>
   );
