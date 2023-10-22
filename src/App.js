@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from "./Home";
+import SignUp from "./SignUp";
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
           Learn React
         </a>
         <Home></Home>
+        {/* path: "/signup"
+          element: <SignUp / */}
+        <SignUp></SignUp>
+        
       </header>
     </div>
   );
