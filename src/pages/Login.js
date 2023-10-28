@@ -17,6 +17,7 @@ function LoginPage() {
 
     return (
         <div>
+            <h1>Log in</h1>
             <input 
                 type="text" 
                 value={username} 
