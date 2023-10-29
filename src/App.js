@@ -18,10 +18,16 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Link to={'Upload'}>Upload</Link>
-        <Link to={'Login'}>Log in</Link>
-        <Link to={'SignUp'}>Sign up</Link>
+        <h1>Thrifting Exchange</h1>
+        <Link className="header-links" to={'Home'}>Home</Link>
+        <Link className="header-links" to={'Upload'}>Upload</Link>
+        <Link className="header-links" to={'Login'}>Log in</Link>
+        <Link className="header-links" to={'SignUp'}>Sign up</Link>
       </header>
+
+      <body className="App-body">
+        
+      </body>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function LoginPage() {
     const [username, setUsername] = useState('');
@@ -15,21 +16,24 @@ function LoginPage() {
     };
 
     return (
-        <div>
-            <h1>Log in</h1>
+        <div className="login-page">
+            <form>
+            <h1 className="login-header">Log in</h1>
             <p>Username:</p>
-            <input 
+            <input className="input"
                 type="text" 
                 value={username} 
                 onChange={e => setUsername(e.target.value)} 
             />
             <p>Password:</p>
-            <input 
+            <input className="input"
                 type="password" 
                 value={password} 
                 onChange={e => setPassword(e.target.value)} 
             />
-            <button onClick={handleLogin}>Login</button>
+            <button className="login-button" onClick={handleLogin}>Login</button>
+            </form>
+            
         </div>
     );
 }
