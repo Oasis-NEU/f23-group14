@@ -6,7 +6,7 @@ export default function SignUp() {
     const [email, setEmail] = useState('');
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [instagram, setInstagram = useState('');
+    const [instagram, setInstagram] = useState('');
     
     // error-checking states
     const [submitted, setSubmitted] = useState(false);
@@ -56,7 +56,7 @@ export default function SignUp() {
         style={{
         display: submitted ? '' : 'none',
     }}>
-        <h1>{Username} has successfully signed up!</h1>
+        <h1>{username} has successfully signed up!</h1>
     </div>
     );
     };
@@ -68,4 +68,5 @@ export default function SignUp() {
             <h1>Sign up!</h1>
         </div>
     )
+
 }
