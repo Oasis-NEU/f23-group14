@@ -17,11 +17,13 @@ function LoginPage() {
     return (
         <div>
             <h1>Log in</h1>
+            <p>Username:</p>
             <input 
                 type="text" 
                 value={username} 
                 onChange={e => setUsername(e.target.value)} 
             />
+            <p>Password:</p>
             <input 
                 type="password" 
                 value={password} 
