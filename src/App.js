@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
 import Home from "./pages/Home";
-import Upload from "./Upload";
+import Upload from "./pages/Upload";
+import SignUp from "./pages/SignUp";
+import Login from "./pages/SignUp";
 import { Link } from "react-router-dom";
 
 function App() {
@@ -22,6 +25,9 @@ function App() {
         </a>
         <Link to={`Home`}>Home</Link>
         <Link to={`Upload`}>Upload</Link>
+        <Link to ={'SignUp'}>Sign Up</Link>
+        <Link to ={'Login'}>Login</Link>
+
       </header>
     </div>
   );
