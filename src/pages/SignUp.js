@@ -61,11 +61,12 @@ export default function SignUp() {
     );
     };
 
-    
-
     return (
-        <div>
-            <h1>Sign up!</h1>
+        <div className="form">  
+            <div>
+            <h1>User Sign-Up</h1>
+        </div>
         </div>
     )
+
 }
