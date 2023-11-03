@@ -19,20 +19,22 @@ function LoginPage() {
         <div className="login-page">
             <form>
             <h1 className="login-header">Log in</h1>
-            <p>Username:</p>
+            <p className="userandpass">Username:</p>
             <input className="input"
                 type="text" 
                 value={username} 
                 onChange={e => setUsername(e.target.value)} 
             />
-            <p>Password:</p>
+            <p className="userandpass">Password:</p>
             <input className="input"
-                type="password" 
+                type="password"
                 value={password} 
                 onChange={e => setPassword(e.target.value)} 
             />
+
             <button className="login-button" onClick={handleLogin}>Login</button>
             </form>
+            
             
         </div>
     );
