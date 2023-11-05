@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from 'react';
 
 export default function SignUp() {
@@ -40,16 +39,8 @@ export default function SignUp() {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (email === '' || username === '' || password === '') {
-            setError(true);
-        } 
-        else {
-            setSubmitted(true);
-            setError(false);
-        }
-    };
-
-    // display success message
-    const successMessage = () => {
+        export default function SignUp() {
+    }}
     return (
     <div
         className="success"
