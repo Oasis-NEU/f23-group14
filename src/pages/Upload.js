@@ -1,7 +1,9 @@
 import { useState } from "react";
+
 import { MdCloudUpload, MdDelete } from 'react-icons/md'
 import { AiFillFileImage } from 'react-icons/ai'
 import './upload.css'
+
 
 function Upload() {
     const [image, setImage] = useState(null)
@@ -56,7 +58,9 @@ function Upload() {
                 </section>
             </section>
             <section className='child-element-2'>
-                <h3 className="tell-more"> Tell Us More!</h3>
+
+                <h3> Tell Us More!</h3>
+
                 <form>
                     <label>
                         <input 
@@ -77,7 +81,9 @@ function Upload() {
                     </label>
                     </form>
                     <form>
-                    <input className="submit" type="Submit" />
+
+                    <input type="Submit" />
+
                 </form>
              </section>
         </div>
@@ -86,7 +92,4 @@ function Upload() {
 }
 
 export default Upload
-
-
-
 
