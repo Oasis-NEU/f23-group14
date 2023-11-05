@@ -100,3 +100,9 @@
  .child-element-1 {
      align-items: center;
  }
+
+ .dropdown{
+    display: flex;
+    flex-direction: column;
+    
+ }

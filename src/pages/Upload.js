@@ -2,6 +2,8 @@ import { useState } from "react";
 import './upload.css'
 import { MdCloudUpload, MdDelete } from 'react-icons/md'
 import { AiFillFileImage } from 'react-icons/ai'
+import Dropdown from 'react-bootstrap/Dropdown';
+
 
 function Upload() {
     const [image, setImage] = useState(null)
@@ -82,7 +84,26 @@ function Upload() {
                     </label>
                     </form>
                     <form>
-                    <button onClick={handleSubmit}> upload</button>
+                        <Dropdown>
+                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                Color 
+                            </Dropdown.Toggle>
+                            <Dropdown.Menu>
+                                <Dropdown.Item href="#/action-1">Red</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Orange</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">Yellow</Dropdown.Item>
+                                <Dropdown.Item href="#/action-4">Green</Dropdown.Item>
+                                <Dropdown.Item href="#/action-5">Blue</Dropdown.Item>
+                                <Dropdown.Item href="#/action-6">Purple</Dropdown.Item>
+                                <Dropdown.Item href="#/action-7">Black</Dropdown.Item>
+                                <Dropdown.Item href="#/action-8">White</Dropdown.Item>
+                                <Dropdown.Item href="#/action-9">Gray</Dropdown.Item>
+
+                            </Dropdown.Menu>
+                        </Dropdown>
+                    </form>
+                    <form>
+                    <button onClick={handleSubmit}>Upload Your Listing</button>
                 </form>
              </section>
         </div>
