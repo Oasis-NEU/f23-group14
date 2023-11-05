@@ -99,6 +99,24 @@
   border-radius: 25px;
 }
 
+.signup-page {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 200px;
+  background-color: #EAE0CC;
+  color: #4D6A6D;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 25px;
+}
+
 .login-button{
   background-color: #4D6A6D;
   color: #EAE0CC;
@@ -109,6 +127,7 @@
   border-radius: 10px;
   font-weight: bold;
 }
+
 .login-button:active{
   background-color: #798478;
   color: #EAE0CC;
