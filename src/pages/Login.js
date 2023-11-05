@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import "./Login.css";
+import { Link } from "react-router-dom";
 
 function LoginPage() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+
 
     const handleLogin = () => {
         // Handle the login logic here
@@ -16,19 +17,28 @@ function LoginPage() {
     };
 
     return (
-        <div>
-            <h1>Log in</h1>
-            <input 
+        <div className="login-page">
+            <form>
+            <h1 className="login-header">Log in</h1>
+            <p className="userandpass">Username:</p>
+            <input className="input"
                 type="text" 
                 value={username} 
                 onChange={e => setUsername(e.target.value)} 
             />
-            <input 
-                type="password" 
+            <p className="userandpass">Password:</p>
+            <input className="input"
+                type= "password"
                 value={password} 
-                onChange={e => setPassword(e.target.value)} 
+                onChange={e => setPassword(e.target.value)}
             />
-            <button onClick={handleLogin}>Login</button>
+                
+             
+
+            <button className="login-button" onClick={handleLogin}>Login</button>
+            </form>
+            
+            
         </div>
     );
 }
