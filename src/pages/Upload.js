@@ -13,9 +13,14 @@ function Upload() {
         setInputs(values => ({...values, [name]: value}))
     }
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        alert(inputs);
+    const handleSubmit = async (event) => {
+        const { data, error } = await supabase
+        .storage
+        .from('listing')
+        .upload('avatar1.png', image, {
+            cacheControl: '3600',
+            upsert: false
+  })
     }
     return (
     <main>
@@ -77,7 +82,7 @@ function Upload() {
                     </label>
                     </form>
                     <form>
-                    <input type="Submit" />
+                    <button onClick={handleSubmit}> upload</button>
                 </form>
              </section>
         </div>
