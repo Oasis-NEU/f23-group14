@@ -61,7 +61,6 @@ export default function SignUp() {
     );
     };
 
-    
 
     return (
         <div>
@@ -70,3 +69,4 @@ export default function SignUp() {
     )
 
 }
+

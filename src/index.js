@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from './pages/Home';
 import Upload from './pages/Upload';
+
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 
