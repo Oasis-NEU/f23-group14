@@ -6,9 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from './pages/Home';
 import Upload from './pages/Upload';
-
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
+import Demo from "./pages/demo";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "/signup",
     element: <SignUp></SignUp>
+  },
+  {
+    path: "/users",
+    element: <Demo />
   }
 
 ]);
