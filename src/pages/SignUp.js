@@ -1,47 +1,40 @@
 import { useState } from 'react';
 
 export default function SignUp() {
-    // sign up states
     // sign-up fields
     const [email, setEmail] = useState('');
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [instagram, setInstagram] = useState('');
     
-    // error-checking states
     // error-check
     const [submitted, setSubmitted] = useState(false);
     const [error, setError] = useState(false);
 
-    // handling email change
     // email change
     const handleEmail= (e) => {
         setEmail(e.target.value);
         setSubmitted(false);
     };
 
-    // handling username change
     // username change
     const handleUsername = (e) => {
         setUsername(e.target.value);
         setSubmitted(false);
     };
 
-    // handling password change
     // password change
     const handlePassword = (e) => {
         setPassword(e.target.value);
         setSubmitted(false);
     };
 
-    // handling instagram change
     // instagram change
     const handleInstagram = (e) => {
         setInstagram(e.target.value);
         setSubmitted(false);
     };
 
-    // handling form subsmission
     // form subsmission
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -49,12 +42,17 @@ export default function SignUp() {
         export default function SignUp() {
     }}
     return (
-        <div>
+    <div
+        className="success"
+        style={{
+        display: submitted ? '' : 'none',
+    }}>
         <h1>{username} has successfully signed up!</h1>
-        </div>
+    </div>
+
     );
     };
-    
+
     return (
     <div className="signup-page">
             <form>  
@@ -67,7 +65,6 @@ export default function SignUp() {
                 onChange={e => setEmail(e.target.value)} 
             />
 
-}
             <p className="userandpass">Username*:</p>
             <input className="input"
                 type="text" 
@@ -97,4 +94,3 @@ export default function SignUp() {
     )
 
 };
-

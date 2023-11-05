@@ -127,6 +127,67 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.login-button{
+  background-color: #4D6A6D;
+  color: #EAE0CC;
+  width: 310px;
+  height: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10%;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.login-button:active{
+  background-color: #798478;
+  color: #EAE0CC;
+  width: 310px;
+  height: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10%;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.login-header{
+  color: #4D6A6D;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: start;
+  margin-left: 5%;
+  
+}
+
+.input {
+  font-size: medium;
+  padding: 4px;
+  color: #798478;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.input:active{
+  font-size: medium;
+  padding: 4px;
+  color: #798478;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.login-form{
+  display: inline-block;
+  align-items: center;
+  height: 325px;
+  width: 350px;
+  margin: auto;
+  text-align: center;
+  
+}
+
+.header-links{
+  color: #4D6A6D;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .home-page{
   background-color: #EAE0CC;
   min-height: 100vh;
@@ -144,3 +205,4 @@
   margin-left: 5%;
   font-size: medium;
 }
+
