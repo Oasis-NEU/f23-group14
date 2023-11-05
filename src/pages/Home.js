@@ -6,8 +6,7 @@ export default function Home() {
         <div className="home-page">
             <h1>Thrifting Exchange</h1>
 
-        <div>
-            <h1> Thrifting Exchange! </h1>
+     
         </div>
     )
 }
