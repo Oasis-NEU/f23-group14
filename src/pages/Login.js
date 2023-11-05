@@ -5,6 +5,7 @@ function LoginPage() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
+
     const handleLogin = () => {
         // Handle the login logic here
         if (username && password) {
@@ -27,10 +28,12 @@ function LoginPage() {
             />
             <p className="userandpass">Password:</p>
             <input className="input"
-                type="password"
+                type= "password"
                 value={password} 
-                onChange={e => setPassword(e.target.value)} 
+                onChange={e => setPassword(e.target.value)}
             />
+                
+             
 
             <button className="login-button" onClick={handleLogin}>Login</button>
             </form>

@@ -87,10 +87,12 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 1rem;
   max-width: 500px;
   margin: auto;
-  margin-top: 20%;
+  padding: 20px;
+  margin-top: 200px;
   background-color: #EAE0CC;
   color: #4D6A6D;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -105,8 +107,17 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 10%;
   border-radius: 10px;
-  
-
+  font-weight: bold;
+}
+.login-button:active{
+  background-color: #798478;
+  color: #EAE0CC;
+  width: 310px;
+  height: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10%;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
 .login-header{
@@ -118,21 +129,27 @@
 }
 
 .input {
-  font-size: larger;
-  padding: 3px;
+  font-size: medium;
+  padding: 4px;
   color: #798478;
   width: 300px;
   border-radius: 10px;
-  
+}
+
+.input:active{
+  font-size: medium;
+  padding: 4px;
+  color: #798478;
+  width: 300px;
+  border-radius: 10px;
 }
 
 form{
   display: inline-block;
   align-items: center;
-  height: 270px;
+  height: 325px;
   width: 350px;
-  margin-bottom: 90px;
-  margin-top: 30px;
+  margin: auto;
   text-align: center;
   
 }
@@ -140,8 +157,6 @@ form{
 .header-links{
   color: #4D6A6D;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
-
 }
 
 .home-page{
@@ -159,4 +174,5 @@ form{
 .userandpass{
   text-align: left;
   margin-left: 5%;
+  font-size: medium;
 }
