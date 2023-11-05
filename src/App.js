@@ -22,6 +22,7 @@ function App() {
         </a>
         <Link to={`Home`}>Home</Link>
         <Link to={`Upload`}>Upload</Link>
+        <Link to={`SignUp`}>Sign Up</Link>
       </header>
     </div>
   );
