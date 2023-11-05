@@ -19,9 +19,9 @@ function Upload() {
     }
     return (
     <main>
-        <h1 className='heading'> Upload Your Clothing!</h1>
-        <section className='grid-container-element'>
-            <section className='grid-child-element-1'>
+        <h1 className='heading'> Upload Your Clothing! 𖠋</h1>
+        <div className='container'>
+            <section className='child-element-1'>
                 <section className='upload-box'>
                     <form action=""
                     onClick={() => document.querySelector(".input-field").click()}>
@@ -55,32 +55,32 @@ function Upload() {
                 </span>
                 </section>
             </section>
-            <section className='grid-container-element-2'>
+            <section className='child-element-2'>
+                <h3> Tell Us More!</h3>
                 <form>
                     <label>
                         <input 
                         type="number"
                         name="value"
-                        placeholder="Estimated Worth:"
-                        value={inputs.value || ""}
+                        placeholder="Estimated Worth:" 
+                        //value={inputs.value || ""}
                         />
                         </label>
                     </form>
                     <form>
                     <label>
-                        <input
-                        type="text"
-                        name="description"
-                        placeholder="Item Description:"
-                        value={inputs.description || ""}
-                        />
+                        <textarea 
+                            name="description" 
+                            type="text"
+                            placeholder="Item Description:" 
+                            rows={4} cols={22} />
                     </label>
                     </form>
                     <form>
                     <input type="Submit" />
                 </form>
              </section>
-        </section>
+        </div>
     </main>
     )
 }
