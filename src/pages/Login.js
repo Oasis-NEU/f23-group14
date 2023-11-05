@@ -18,7 +18,7 @@ function LoginPage() {
 
     return (
         <div className="login-page">
-            <form>
+            <form className="login-form">
             <h1 className="login-header">Log in</h1>
             <p className="userandpass">Username:</p>
             <input className="input"

@@ -1,0 +1,105 @@
+.upload-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px dashed  pink;
+    height: 300px;
+    width: 500px;
+    cursor: pointer;
+    padding: 2%;
+    border-radius: 5px;
+    margin-left: 20%;
+    color: palevioletred;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+ }
+ 
+ .uploaded-row{
+     margin: 10px -123px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 15px 40px;
+     padding-right: 30px;
+     border-radius: 5px;
+     background-color: #FFF0F5;
+     margin-left: 20%;
+     color: palevioletred;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ 
+ .heading{
+     margin-top: 40px;
+     color: gray;
+     text-align: center;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ 
+ input[type=number]{
+     color: pink;
+     padding: 10px;
+     border: none;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     border-radius: 7px;
+     margin-left: 49.5%;
+     padding-right: 320px;
+ 
+ }
+ 
+ textarea {
+     color: pink;
+     padding-bottom: 50px;
+     padding-top: 10px;
+     border-color: pink;
+     padding-left: 7px;
+     resize: none;
+     border:none;
+     border-radius: 7px;
+     padding-right: 300px;
+     align-items: center;
+     flex-wrap: wrap;
+     margin-bottom: 10px;
+     margin-left: 50%;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ 
+.submit{
+     background-color: palevioletred;
+     color: pink;
+     padding-right: 300px;
+     margin-left: 51%;
+     padding-top: 5px;
+     padding-bottom: 5px;
+     border: none;
+     border-radius: 10px;
+ }
+ 
+ 
+ input{
+     flex-wrap: wrap;
+     margin-bottom: 10px;
+ }
+ 
+ .container{
+     display: flex;
+     flex-direction: row;
+     margin-left: 7%;
+     margin-top: 100px;
+     align-items: center;
+     flex-wrap: wrap;
+ 
+ }
+ 
+ .tell-more{
+     margin-left: 51.5%;
+     color: gray;
+     text-align: left;
+ }
+ .child-element-1 {
+     align-items: center;
+ }
+
+
+
+ 
