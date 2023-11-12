@@ -1,12 +1,8 @@
 import { useState } from "react";
-
 import { MdCloudUpload, MdDelete } from 'react-icons/md'
 import { AiFillFileImage } from 'react-icons/ai'
-<<<<<<< HEAD
 import Dropdown from 'react-bootstrap/Dropdown';
-=======
 import './upload.css'
->>>>>>> main
 
 
 function Upload() {
@@ -90,7 +86,6 @@ function Upload() {
                     </label>
                     </form>
                     <form>
-<<<<<<< HEAD
                         <Dropdown>
                             <Dropdown.Toggle variant="success" id="dropdown-basic">
                                 Color 
@@ -111,11 +106,6 @@ function Upload() {
                     </form>
                     <form>
                     <button onClick={handleSubmit}>Upload Your Listing</button>
-=======
-
-                    <input type="Submit" />
-
->>>>>>> main
                 </form>
              </section>
         </div>
