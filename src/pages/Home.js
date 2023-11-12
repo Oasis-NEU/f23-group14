@@ -3,14 +3,16 @@ import { supabase } from "../supabaseClient";
 
 export default function Home() {
   const [listings, setListings] = useState([]);
+  const [imageUrl, setImageUrl] = useState([]);
+
+  async function readAll() {
+    let { data, error } = await supabase.from("listings").select("*");
+
+    console.log("listings: ", data);
+    setListings(data);
+  }
 
   useEffect(() => {
-    async function readAll() {
-      let { data, error } = await supabase.from("listings").select("*");
-
-      console.log("listings: ", data);
-      setListings(data);
-    }
     readAll();
   }, []);
 
@@ -19,9 +21,20 @@ export default function Home() {
       <h1>Thrifting Exchange</h1>
 
       <div>
-        {listings.map((listing) => (
-          <p>{listing.item_description}</p>
-        ))}
+        {listings.map((listing) => {
+          return (
+            <div>
+              <div> {listing.estimated_worth} </div>
+              <img
+                src={listing.clothing_image}
+                alt="cloth"
+                width={100}
+                height={100}
+              ></img>
+              <div> {listing.item_description} </div>
+            </div>
+          );
+        })}
       </div>
 
       <h1>Create listing</h1>
