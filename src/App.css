@@ -189,14 +189,14 @@
 }
 
 .home-page{
-  background-color: #EAE0CC;
+  background-color: #E2C799;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
   font-size: calc(10px + 2vmin);
-  color: #4D6A6D;
+  color: #9A3B3B;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
