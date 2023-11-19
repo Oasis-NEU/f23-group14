@@ -20,7 +20,7 @@ export default function Home() {
     <div className="home-page">
       <h1>Thrifting Exchange</h1>
 
-      <div>
+      <div className="listing">
         {listings.map((listing) => {
           return (
             <div>
