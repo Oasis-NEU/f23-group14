@@ -18,6 +18,14 @@ export default function Home() {
 
   return (
     <div className="home-page">
+    <div className = "nav">
+    <nav>
+      <a href="./pages/Home">Home</a> |
+      <a href="/pages/Upload">Upload</a> |
+      <a href="/pages/Login">Log In</a> |
+      <a href="/pages/Signup">Sign Up</a>
+    </nav>
+    </div>
       <h1>Thrifting Exchange</h1>
 
       <div>
@@ -36,6 +44,7 @@ export default function Home() {
           );
         })}
       </div>
+      
 
       <h1>Create listing</h1>
       {/* item_description - text input */}
