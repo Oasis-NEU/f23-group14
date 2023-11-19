@@ -4,14 +4,7 @@ import { AiFillFileImage } from "react-icons/ai";
 import Dropdown from "react-bootstrap/Dropdown";
 import "./upload.css";
 import { supabase } from "../supabaseClient";
-/* 
-- make buttons for all of the fields 
-- connect the fields with the data 
-- eg. line 49 needs to be fixed
-- eg. create consts for each field 
-- style the page to match the theme
 
-  */
 function Upload() {
   const [image, setImage] = useState(null);
   const [fileName, setFileName] = useState("No selected file");
@@ -73,7 +66,7 @@ function Upload() {
                     fileRef.current.click();
                   }}
                 >
-                  <MdCloudUpload color="pink" size={60} />
+                  <MdCloudUpload color="#9A3B3B" size={60} />
                   <p>Browse Files to Upload</p>
                 </div>
               )}
