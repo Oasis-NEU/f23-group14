@@ -71,7 +71,7 @@ function Upload() {
                         <input 
                         type="number"
                         name="value"
-                        placeholder="Estimated Worth:" 
+                        placeholder="Estimated Worth" 
                         //value={inputs.value || ""}
                         />
                         </label>
@@ -81,7 +81,7 @@ function Upload() {
                         <textarea 
                             name="description" 
                             type="text"
-                            placeholder="Item Description:" 
+                            placeholder="Item Description" 
                             rows={4} cols={22} />
                     </label>
                     </form>
