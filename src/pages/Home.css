@@ -17,7 +17,7 @@ img {
 
 .item-description {
     color: #9A3B3B;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lucida Grande', monospace;
     font-size: 25px;
     margin-bottom: 5px;
 }
@@ -25,6 +25,6 @@ img {
 .item-worth {
     margin-bottom: 20px;
     color: #C08261;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lucida Grande', monospace;
     font-size: 21px;
 }

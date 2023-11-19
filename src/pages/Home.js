@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { supabase } from "../supabaseClient";
-import { Link } from "react-router-dom";
-import Upload from "./pages/Upload";
 import './Home.css'
 
 
@@ -22,9 +20,8 @@ export default function Home() {
 
   return (
     <div className="home-page">
-      <h1>Thrifting Exchange</h1>
+      <h1> Thrifting Exchange</h1>
 
-    
       <div className="listing">
         {listings.map((listing) => {
           return (
@@ -41,9 +38,7 @@ export default function Home() {
           );
         })}
       </div>
-
-      <h1>Create listing</h1>
-        <Link className="header-links" to="/Upload">Upload</Link>
+      <p>Create listing</p>
 
     </div>
   );
