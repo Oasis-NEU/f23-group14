@@ -2,7 +2,7 @@ import './App.css';
 import Home from "./pages/Home";
 import Upload from "./pages/Upload";
 import SignUp from "./pages/SignUp";
-import Login from "./pages/SignUp";
+import Login from "./pages/Login";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from 'react'
 import { supabase } from './supabaseClient'
