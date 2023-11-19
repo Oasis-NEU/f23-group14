@@ -26,6 +26,7 @@ function App() {
         <Link className="header-links" to={'Upload'}>Upload</Link>
         <Link className="header-links" to={'Login'}>Log in</Link>
         <Link className="header-links" to={'SignUp'}>Sign up</Link>
+
       </header>
 
       <body className="App-body">

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { supabase } from "../supabaseClient";
+import './Home.css'
+
 
 export default function Home() {
   const [listings, setListings] = useState([]);
@@ -28,27 +30,24 @@ export default function Home() {
     </div>
       <h1>Thrifting Exchange</h1>
 
-      <div>
+      <div className="listing">
         {listings.map((listing) => {
           return (
             <div>
-              <div> {listing.estimated_worth} </div>
               <img
                 src={listing.clothing_image}
                 alt="cloth"
-                width={100}
-                height={100}
+                width={300}
+                height={350}
               ></img>
-              <div> {listing.item_description} </div>
+              <div className="item-description"> {listing.item_description} </div>
+              <div className="item-worth"> ${listing.estimated_worth} </div>
             </div>
           );
         })}
       </div>
-      
+      <p>Create listing</p>
 
-      <h1>Create listing</h1>
-      {/* item_description - text input */}
-      {/* button, click the button => insert a new listing, refresh the list */}
     </div>
   );
 }
