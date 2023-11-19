@@ -196,4 +196,16 @@
   font-size: medium;
 }
 
+.logout-btn{
+  background-color: #4D6A6D;
+  color: #EAE0CC;
+  width: 100px;
+  height: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10%;
+  border-radius: 10px;
+  font-weight: bold;
+  
+}
+
 

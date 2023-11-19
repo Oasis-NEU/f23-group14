@@ -4,6 +4,11 @@ import Upload from "./pages/Upload";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/SignUp";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from 'react'
+import { supabase } from './supabaseClient'
+import Auth from './Auth-ex'
+import Account from './Account-ex'
+
 
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -18,6 +23,7 @@ const router = createBrowserRouter([
 
 
 function App() {
+  
   return (
     <div className="App">
       <header className="App-header">

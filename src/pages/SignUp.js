@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from 'react';
+import { supabase } from '../supabaseClient';
+import { useNavigate } from "react-router-dom";
 
 export default function SignUp() {
     // sign-up fields
@@ -7,6 +9,7 @@ export default function SignUp() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [instagram, setInstagram] = useState('');
+    const navigate = useNavigate();
     
     // error-check
     const [submitted, setSubmitted] = useState(false);
@@ -37,7 +40,7 @@ export default function SignUp() {
     };
 
     // form subsmission
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if (email === '' || username === '' || password === '') {
             setError(true);
@@ -46,6 +49,17 @@ export default function SignUp() {
             setSubmitted(true);
             setError(false);
         }
+
+        const { data, error } = await supabase.auth.signUp({
+            email: email,
+            password: password,
+        })
+
+        if(data){
+            navigate("/Home")
+        }
+
+
     };
 
     // display success message
