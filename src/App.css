@@ -15,7 +15,7 @@
 }
 
 .App-header {
-  background-color: #EAE0CC;
+  background-color: #FFF3E2;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -212,15 +212,15 @@
 }
 
 .home-page{
-  background-color: #EAE0CC;
+  background-color: #FFF3E2;
   min-height: 100vh;
   display: flex;
-  flex-direction: row;
-  align-items: top;
-  justify-content: center;
+  align-items: start;
   font-size: calc(10px + 2vmin);
-  color: #4D6A6D;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  flex-direction: column;
+  justify-content: start;
+  color: #9A3B3B;
+  font-family: optima, sans-serif;
 }
 
 .userandpass{
