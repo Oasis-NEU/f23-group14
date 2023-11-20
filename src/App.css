@@ -209,6 +209,7 @@
 .nav{
   text-align: left;
   display: flex;
-  background-color: #ffffff;
+  background-color: #FFF3E2;
+  font-family: 'Lucida Grande', monospace;
   
 }
