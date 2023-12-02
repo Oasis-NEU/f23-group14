@@ -1,0 +1,106 @@
+/* LoginForm.css */
+.login-nav{
+  background-color: #FFF3E2;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #9A3B3B;
+  font-family: optima, sans-serif;
+}
+
+.login-header{
+    color: #9A3B3B;
+    font-family: optima, sans-serif;
+    text-align: start;
+    margin-left: 0px;
+}
+
+.login-form{
+    display: flex;
+    align-content: center;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 500px;
+    height: 500px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 150px;
+    background-color: #FFF3E2;
+    color: #9A3B3B;
+    font-family: optima, sans-serif;
+    border-radius: 4px;
+}
+
+.login-form form {
+    padding: 32px;
+    min-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.login-form input {
+    display: block;
+    padding: 10px;
+    width: 80%;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+}
+
+.login-form label {
+    display: block;
+}
+
+.login-button{
+    background-color: #9A3B3B; 
+    color: #FFF3E2;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-family: optima, sans-serif;
+    cursor: pointer;
+    display: block;
+    margin: 16px auto;
+    width: 84%;
+    font-weight: bold;
+}
+  
+.login-button:hover{
+    background-color: #751414;
+}
+  
+.login-button:active{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-family: optima, sans-serif;
+    cursor: pointer;
+    display: block;
+    margin: 16px auto;
+    width: 84%;
+    background-color: #C08261;
+    color: #FFF3E2;
+    font-weight: bold;
+}
+
+.login-button:disabled{
+    opacity: 0.6;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.alternative-option {
+    text-align: center;
+    margin-top: 16px;
+    color: #9A3B3B;
+}

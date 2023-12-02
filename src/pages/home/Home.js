@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { supabase } from '../supabaseClient'
+import supabase from "../../utils/supabase";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-
+import Loader from "../../components/Loader/Loader";
+import "./Home.css";
 
 export default function Home() {
     const navigate = useNavigate()
@@ -28,7 +29,7 @@ export default function Home() {
     return (
 
         <div className="home-page">
-            <h1>Thrifting Exchange</h1>
+            <h1>University Threads</h1>
 
             <button onClick={handleLogOut} className="logout-btn">Log Out</button>
 

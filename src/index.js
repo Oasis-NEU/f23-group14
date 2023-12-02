@@ -4,11 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from './pages/Home';
+import Home from './pages/home/Home';
 import Upload from './pages/Upload';
-import Login from './pages/Login';
-import SignUp from './pages/SignUp';
-import Demo from "./pages/demo";
+import Login from './pages/login/Login';
+import SignUp from './pages/signup/SignUp';
 
 const router = createBrowserRouter([
   {
@@ -28,13 +27,9 @@ const router = createBrowserRouter([
     element: <Login></Login>
   },
   {
-    path: "/signup",
+    path: "/SignUp",
     element: <SignUp></SignUp>
   },
-  {
-    path: "/users",
-    element: <Demo />
-  }
 
 ]);
 

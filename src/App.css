@@ -16,14 +16,26 @@
 
 .App-header {
   background-color: #FFF3E2;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #9A3B3B;
+  font-family: optima, sans-serif;
+}
+
+.App-body {
+  background-color: #FFF3E2;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: top;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #4D6A6D;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #9A3B3B;
+  font-family: optima, sans-serif;
+  
 }
 
 .App-link {
@@ -33,41 +45,9 @@
 .label {
   display: block;
   font-size: larger;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: optima, sans-serif;
   color: white;
   padding: 5px;
-}
-
-.SignUp-btn {
-  color: white;
-  background-color: #585858;
-  border-radius: 5px;
-  font-size: larger;
-  padding: 12px 16px;
-  cursor: pointer;
-  display: block;
-}
-
-.SignUp-btn:active{
-  background-color: #798478;
-  color: #EAE0CC;
-  width: 310px;
-  height: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 8%;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-.SignUp-btn:hover{
-  background-color: #798478;
-  color: #EAE0CC;
-  width: 310px;
-  height: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 10%;
-  border-radius: 10px;
-  font-weight: bold;
 }
 
 .messages {
@@ -102,41 +82,13 @@
   }
 }
 
-.login-page {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 1rem;
-  max-width: 500px;
-  margin: auto;
-  padding: 20px;
-  margin-top: 200px;
-  background-color: #EAE0CC;
-  color: #4D6A6D;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-radius: 25px;
+
+
+.header-links{
+  color: #9A3B3B;
+  font-family: optima, sans-serif;
 }
 
-.signup-page {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 1rem;
-  max-width: 500px;
-  margin: auto;
-  padding: 20px;
-  margin-top: 100px;
-  background-color: #EAE0CC;
-  color: #4D6A6D;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-radius: 25px;
-}
 
 .input {
   font-size: medium;
@@ -152,83 +104,6 @@
   color: #798478;
   width: 300px;
   border-radius: 10px;
-}
-
-.header-links{
-  color: #4D6A6D;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.login-button{
-  background-color: #4D6A6D;
-  color: #EAE0CC;
-  width: 310px;
-  height: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 10%;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-.login-button:hover{
-  background-color: #798478;
-  color: #EAE0CC;
-  width: 310px;
-  height: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 10%;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-.login-button:active{
-  background-color: #798478;
-  color: #EAE0CC;
-  width: 310px;
-  height: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 8%;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-.login-header{
-  color: #4D6A6D;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: start;
-  margin-left: 5%;
-  
-}
-
-.input {
-  font-size: medium;
-  padding: 4px;
-  color: #798478;
-  width: 300px;
-  border-radius: 10px;
-}
-
-.input:active{
-  font-size: medium;
-  padding: 4px;
-  color: #798478;
-  width: 300px;
-  border-radius: 10px;
-}
-
-.login-form{
-  display: inline-block;
-  align-items: center;
-  height: 325px;
-  width: 350px;
-  margin: auto;
-  text-align: center;
-  
-}
-
-.header-links{
-  color: #4D6A6D;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .home-page{
@@ -250,33 +125,34 @@
 }
 
 .logout-btn{
-  background-color: #4D6A6D;
-  color: #EAE0CC;
-  width: 100px;
+  background-color: #9A3B3B;
+  color: #FFF3E2;
+  width:  100px;
   height: 50px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: optima, sans-serif;
   margin-top: 10%;
   border-radius: 10px;
   font-weight: bold;
+
 }
 
 .logout-btn:hover{
-  background-color: #798478;
+  background-color: #C08261;
   color: #EAE0CC;
-  width: 100px;
+  width:  100px;
   height: 50px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: optima, sans-serif;
   margin-top: 10%;
   border-radius: 10px;
   font-weight: bold;
 }
 
 .logout-btn:active{
-  background-color: #798478;
+  background-color: #C08261;
   color: #EAE0CC;
-  width: 100px;
+  width:  100px;
   height: 50px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: optima, sans-serif;
   margin-top: 8%;
   border-radius: 10px;
   font-weight: bold;
