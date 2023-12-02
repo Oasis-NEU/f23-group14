@@ -20,9 +20,9 @@ img {
 
 .item-description {
     color: #9A3B3B;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-    margin-bottom: 5px;
+    font-family: 'Lucida Grande', monospace;
+    font-size: 23px;
+    margin-bottom: 7px;
     word-wrap: break-word;
     overflow: hidden;
     max-width: 250px;
@@ -32,6 +32,6 @@ img {
 .item-worth {
     margin-bottom: 20px;
     color: #C08261;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lucida Grande', monospace;
     font-size: 21px;
 }

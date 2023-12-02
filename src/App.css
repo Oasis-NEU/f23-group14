@@ -206,3 +206,9 @@
   font-size: medium;
 }
 
+.nav{
+  text-align: left;
+  display: flex;
+  background-color: #ffffff;
+  
+}

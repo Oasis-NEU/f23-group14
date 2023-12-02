@@ -40,10 +40,6 @@ export default function Home() {
           );
         })}
       </div>
-
-      <h1>Create listing</h1>
-      {/* item_description - text input */}
-      {/* button, click the button => insert a new listing, refresh the list */}
     </div>
   );
 }

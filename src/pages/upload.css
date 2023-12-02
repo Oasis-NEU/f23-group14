@@ -1,105 +1,113 @@
-.upload-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border: 2px dashed  #9A3B3B;
-    height: 300px;
-    width: 500px;
-    cursor: pointer;
-    padding: 2%;
-    border-radius: 5px;
-    margin-left: 20%;
-    color: #C08261;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
- }
- 
- .uploaded-row{
-     margin: 10px -123px;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 15px 40px;
-     padding-right: 30px;
-     border-radius: 5px;
-     background-color: #9A3B3B;
-     margin-left: 20%;
-     color: #C08261;
-     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- }
- 
- .heading{
-     margin-top: 40px;
+.heading{
      color: #9A3B3B;
      text-align: center;
-     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- }
+     font-family: optima, sans-serif;
+     font-size: 50px;
+    }
  
- input[type=number]{
-     color: #9A3B3B;
-     padding: 10px;
-     border: none;
-     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-     border-radius: 7px;
-     margin-left: 49.5%;
-     padding-right: 320px;
- }
- 
- textarea {
-     color: #9A3B3B;
-     padding-bottom: 50px;
-     padding-top: 10px;
-     border-color: #9A3B3B;
-     padding-left: 7px;
-     resize: none;
-     border:none;
-     border-radius: 7px;
-     padding-right: 300px;
-     align-items: center;
-     flex-wrap: wrap;
-     margin-bottom: 10px;
-     margin-left: 50%;
-     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+ .listing-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px;
  }
 
- button{
+.listing-form input,
+.listing-form textarea,
+.listing-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #fff1ed;
+    border-radius: 4px;
+    resize: none;
+}
 
-     background-color: #C08261;
-     color: #9A3B3B;
-     padding-right: 300px;
-     margin-left: 51%;
-     padding-top: 5px;
-     padding-bottom: 5px;
-     border: none;
-     border-radius: 10px;
- }
- 
- 
- input{
-     flex-wrap: wrap;
-     margin-bottom: 10px;
- }
- 
- .container{
-     display: flex;
-     flex-direction: row;
-     margin-left: 7%;
-     margin-top: 100px;
-     flex-wrap: wrap;}
+.listing-form label {
+    margin-bottom: 8px;
+    display: block;
+    font-weight: bold;
+    font-family: optima, sans-serif;
 
- h3{
+}
 
-     margin-left: 51.5%;
-     color: #9A3B3B;
-     text-align: left;
- }
- .child-element-1 {
-     align-items: center;
- }
+.listing-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    padding: 32px;
+    border-radius: 8px;
+}
 
- .dropdown{
+.listing-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcf3ef;
+    border-radius: 8px;
+    font-family: optima, sans-serif;
+    padding: 24px;
+}
+
+.upload-image {
+    cursor: pointer;
+}
+
+.image-section {
+    border: 2px dashed #d28c8c;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
-    
- }
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.form-fields {
+    padding: 16px;
+    min-width: 400px;
+    border-radius: 8px;
+    font-family: optima, sans-serif;
+    color: #9A3B3B;
+
+}
+
+.form-content {
+    margin-left: 20px;
+    border-left: 1px solid rgb(233, 228, 228);
+    font-family: optima, sans-serif;
+    color: lightgray;
+
+}
+
+.listing-form label {
+    margin-bottom: 8px;
+    display: block;
+    color: #c07161;
+}
+
+.listing-form-button {
+    background-color: #c07161;
+    color: #FFF3E2;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font-family: optima, sans-serif;
+
+}
+
+.image-preview {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 20px;
+}
