@@ -6,7 +6,7 @@
 }
 
 .links a {
-    color: #f2f2f2; /* Text color */
+    color:  #fcf3ef; /* Text color */
     margin-right: 1em;
     text-decoration: none;
     font-size: 25px;
@@ -27,11 +27,13 @@
 
 .title {
     font-weight: bold;
-    color: #FFF3E2;
+    color:  #fcf3ef;
+    display: flex;
+    margin: auto;
 }
 
 .navbar a {
-    color: #FFF3E2;
+    color:  #fcf3ef;
     margin-right: 1em;
     text-decoration: none;
 }
@@ -44,4 +46,18 @@
     padding: 8px;
     border: 1px solid #C08261(79, 79%, 76%);
     border-radius: 8px;
+}
+
+.nav-logo{
+    width: 80px;
+    background-image: radial-gradient();
+    background-color: #fcf3ef;
+    border-radius: 25px;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+.thread{
+    display: flex;
+    flex-direction: row;
 }

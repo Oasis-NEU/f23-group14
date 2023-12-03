@@ -4,6 +4,8 @@ import { AiFillFileImage } from "react-icons/ai";
 import "./upload.css";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "../supabaseClient";
+import Navbar from "../components/NavBar/Navbar";
+
 
 function Upload() {
   const [image, setImage] = useState(null);
@@ -73,6 +75,7 @@ function Upload() {
 
   return (
     <main>
+      <header className="upload-nav"><Navbar></Navbar></header>
       <h1 className="heading"> Upload Your Clothing! 𖠋</h1>
       <div className="listing-form-container">
         <form onSubmit={handleSubmit} className="listing-form">

@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import "./Navbar.css";
 import supabase from "../../utils/supabase";
+import threadlogo from "../../img/threadlogo.png";
 
 function Navbar() {
     const { isLoggedIn, loading } = useAuth();
@@ -20,7 +21,9 @@ function Navbar() {
     return (
         <nav className="navbar">
       <Link to="/">
+        <div className="thread"><img src={threadlogo} alt="Logo" className="nav-logo"/>
         <div className="title">University Threads</div>
+        </div>
       </Link>
       {!loading && (
         <div className="links">
@@ -36,6 +39,7 @@ function Navbar() {
             <>
               <Link to="/login">Login</Link>
               <Link to="/signup">Signup</Link>
+              <Link to="/upload">Upload</Link>
             </>
           )}
         </div>

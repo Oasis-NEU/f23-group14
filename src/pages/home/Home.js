@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Loader from "../../components/Loader/Loader";
 import "./Home.css";
+import Navbar from "../../components/NavBar/Navbar";
 
 export default function Home() {
     const navigate = useNavigate()
@@ -29,9 +30,8 @@ export default function Home() {
     return (
 
         <div className="home-page">
+            <header className="home-nav"><Navbar></Navbar></header>
             <h1>University Threads</h1>
-
-            <button onClick={handleLogOut} className="logout-btn">Log Out</button>
 
             <div className="listing">
             {listings.map((listing) => {
@@ -47,11 +47,11 @@ export default function Home() {
                 <div className="item-worth"> ${listing.estimated_worth} </div>
                 </div>
             );
-            })}</div>
+            })}
 
-            <h1>Create listing</h1>
-            <Link className="header-links" to="/Upload">Upload</Link>
-        
+            
+            </div>
+            <button onClick={handleLogOut} className="logout-btn">Log Out</button>     
         </div> 
     )
 }

@@ -1,6 +1,6 @@
 /* LoginForm.css */
 .login-nav{
-  background-color: #FFF3E2;
+  background-color: #fcf3ef;
   display: flex;
   flex-direction: column;
   align-items: top;
@@ -30,7 +30,7 @@
     margin: auto;
     padding: 20px;
     margin-top: 150px;
-    background-color: #FFF3E2;
+    background-color: #fcf3ef;
     color: #9A3B3B;
     font-family: optima, sans-serif;
     border-radius: 4px;
@@ -59,7 +59,7 @@
 
 .login-button{
     background-color: #9A3B3B; 
-    color: #FFF3E2;
+    color:  #fcf3ef;
     padding: 10px 15px;
     border: none;
     border-radius: 4px;
@@ -85,7 +85,7 @@
     margin: 16px auto;
     width: 84%;
     background-color: #C08261;
-    color: #FFF3E2;
+    color: #fcf3ef;
     font-weight: bold;
 }
 

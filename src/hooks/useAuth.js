@@ -30,7 +30,6 @@ function useAuth() {
         loading, 
         isLoggedIn: !!session
     };
-    
 }
 
 export default useAuth;

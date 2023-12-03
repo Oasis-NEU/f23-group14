@@ -15,7 +15,7 @@
 }
 
 .App-header {
-  background-color: #FFF3E2;
+  background-color:  #fcf3ef;
   display: flex;
   flex-direction: column;
   align-items: top;
@@ -26,13 +26,13 @@
 }
 
 .App-body {
-  background-color: #FFF3E2;
+  background-color:  #fcf3ef;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: top;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(30px + 2vmin);
   color: #9A3B3B;
   font-family: optima, sans-serif;
   
@@ -73,6 +73,18 @@
   padding: 5px;
 }
 
+.purpose{
+  color: #9A3B3B;
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 0%;
+}
+
+.WebsiteName{
+  font-weight: bold;
+
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -83,78 +95,16 @@
 }
 
 
-
-.header-links{
-  color: #9A3B3B;
-  font-family: optima, sans-serif;
+.logo{
+  display: block;
+  border: none;
+  width: 400px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -8%;
+  margin-top: -8%;
+  transform: rotate(23deg);
 }
 
 
-.input {
-  font-size: medium;
-  padding: 4px;
-  color: #798478;
-  width: 300px;
-  border-radius: 10px;
-}
-
-.input:active{
-  font-size: medium;
-  padding: 4px;
-  color: #798478;
-  width: 300px;
-  border-radius: 10px;
-}
-
-.home-page{
-  background-color: #FFF3E2;
-  min-height: 100vh;
-  display: flex;
-  font-size: calc(10px + 2vmin);
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  color: #9A3B3B;
-  font-family: optima, sans-serif;
-}
-
-.userandpass{
-  text-align: left;
-  margin-left: 5%;
-  font-size: medium;
-}
-
-.logout-btn{
-  background-color: #9A3B3B;
-  color: #FFF3E2;
-  width:  100px;
-  height: 50px;
-  font-family: optima, sans-serif;
-  margin-top: 10%;
-  border-radius: 10px;
-  font-weight: bold;
-
-}
-
-.logout-btn:hover{
-  background-color: #C08261;
-  color: #EAE0CC;
-  width:  100px;
-  height: 50px;
-  font-family: optima, sans-serif;
-  margin-top: 10%;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-.logout-btn:active{
-  background-color: #C08261;
-  color: #EAE0CC;
-  width:  100px;
-  height: 50px;
-  font-family: optima, sans-serif;
-  margin-top: 8%;
-  border-radius: 10px;
-  font-weight: bold;
-
-}
